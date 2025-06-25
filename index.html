@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+
+
+    <!-- Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+
+        }
+
+        .site-menu .hd-ctg-box {
+            background: linear-gradient(360deg, #1CD1FA 13.3%, rgba(28, 209, 250, 0) 67.55%);
+        }
+
+        .title-box .sh-title::after {
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 214px;
+            height: 4px;
+            background: #04EC8C;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-[#090E18]">
+
+    <header class="header bg-[#111113] py-[15px] border-b border-[#252E45]">
+        <div class="hd-container px-[22px] mx-auto">
+            <div class="header-inner flex justify-between items-center">
+                <div class="left-hd flex justify-start items-center gap-[24px]">
+                    <div class="humber-menu">
+                        <a href="#"
+                            class="flex justify-center items-center w-[54px] h-[54px] bg-[#212123] rounded-[18px] border-[1px] border-[#252E45]">
+                            <img src="assets/images/hum-menu.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header-logo">
+                        <a href="#"
+                            class="text-[#fff] text-[36px] font-regular leading-[100%] font-['Qurova_DEMO']">Fatetests</a>
+                    </div>
+                </div>
+                <div class="right-hd flex justify-end items-center gap-[6px] w-full">
+                    <a href="#"
+                        class="flex justify-center items-center w-[54px] h-[54px] bg-[#212123] rounded-[18px] border-[1px] border-[#252E45]">
+                        <img src="assets/images/messages.svg" alt="" class="w-[22px] h-[22px]">
+                    </a>
+
+                    <a href="#"
+                        class="site-btn w-full block register-btn max-w-[128px] bg-[#1B2433] border border-[#252E45] rounded-[18px] font-['Helvetica_Neue'] font-medium text-[16px] leading-[100%] text-[#92A0B7] py-[21px] text-center block">
+                        Register
+                    </a>
+
+                    <a href="#"
+                        class="site-btn w-full block login-btn max-w-[128px] bg-[#04EC8C] rounded-[18px] font-['Helvetica_Neue'] font-medium text-[16px] leading-[100%] text-[#090E18] py-[21px] text-center block">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="site-menu-section pt-[16px]">
+        <div class="my-container px-[22px] mx-auto">
+            <div class="site-menu-inner flex justify-between items-start gap-[22px]">
+                <div
+                    class="site-menu max-w-[236px] h-[max-content] bg-[#0C101C] rounded-[18px] border-[1px] border-[#131A2C] p-[18px]">
+                    <h3
+                        class="menu-title text-[#868686] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                        Menu
+                    </h3>
+                    <div class="head-ctg grid grid-cols-2 gap-[10px] mt-[15px]">
+                        <div
+                            class="hd-ctg-box flex justify-center items-center gap-[5px] flex-col py-[14px] px-[18px] rounded-[18px]">
+                            <img src="assets/images/Casino.png" alt="">
+                            <span
+                                class="text-[#fff] text-[18px] font-medium font-['Helvetica_Neue'] leading-[100%]">Casino</span>
+                        </div>
+                        <div
+                            class="hd-ctg-box flex justify-center items-center gap-[5px] flex-col py-[14px] px-[18px] rounded-[18px]">
+                            <img src="assets/images/sports.png" alt="">
+                            <span
+                                class="text-[#fff] text-[18px] font-medium font-['Helvetica_Neue'] leading-[100%]">Sports</span>
+                        </div>
+                    </div>
+
+                    <nav class="mt-[12px]">
+                        <ul class="flex flex-col gap-[10px]">
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-about.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-about.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">About
+                                        us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-contact.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Contact
+                                        us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-blogs.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Our
+                                        Blogs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-sports.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Sports</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-pay.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Payments</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-bet.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Bet
+                                        History</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-start items-center gap-[10px] w-full block bg-[#1B2433] rounded-[10px] py-[10px] px-[14px]">
+                                    <img src="assets/images/menu-ic-profile.svg" alt="" class="w-[20px] h-[20px]">
+                                    <span
+                                        class="text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%]">Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+                <div class="md-area w-full max-w-[1350px]">
+                    <h1
+                        class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                        <img src="assets/images/cup.svg" alt="" class="w-[23px] h-[23px]">
+                        Recent Wins
+                    </h1>
+
+                    <div
+                        class="ctg-boxes mt-[21px] mb-[18px] bg-[#151c28] rounded-[16px] border-[1px] border-[#252E45] p-[8px] flex items-center gap-[8px] overflow-x-auto scrollbar-hide scrollbar-width-0">
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(51,217,184,0.71)_0%,_rgba(51,217,184,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(254,32,57,0.77)_0%,_rgba(254,32,57,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/hanry.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Hannry</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(48,232,255,0.99)_0%,_rgba(48,232,255,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-2.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz 2</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(4,240,147,0.97)_0%,_rgba(4,240,147,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-3.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz 3</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_#4CC2FF_0%,_rgba(76,194,255,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-4.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(233,89,255,0.8)_0%,_rgba(233,89,255,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-5.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(255,220,63,0.95)_0%,_rgba(255,220,63,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-6.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_#FE2039_0%,_rgba(254,32,57,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-7.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(4,240,147,0.97)_0%,_rgba(4,240,147,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-3.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                        <div
+                            class="ctg-box flex justify-start items-center p-[8px] gap-[9px] w-[125px] border-[2px] border-[#1B2433] rounded-[12px] bg-[linear-gradient(180deg,_rgba(255,220,63,0.95)_0%,_rgba(255,220,63,0)_100%)]">
+                            <div class="ctg-box-inner-img w-[40px] h-[40px]">
+                                <img src="assets/images/starzz-6.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="ctg-box-inner-content flex items-start flex-col gap-[7px]">
+                                <h3 class="text-[#fff] text-[12px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                    Starzz</h3>
+                                <span
+                                    class="text-[#fff] text-[14px] font-medium font-['Helvetica_Neue'] leading-[100%]">$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="px-[47px] py-[53px] jackpot-banner mb-[51px] bg-[url('assets/images/jackpot-banner.png')] bg-cover bg-center bg-no-repeat">
+                        <div
+                            class="jackpot-banner-inner w-full max-w-[454px] flex flex-col justify-start items-center gap-[24px] ">
+                            <h2 class="text-[#fff] text-[34px] font-medium font-['Helvetica_Neue'] leading-[120%]">
+                                Your Jackpot Journey
+                                Starts Here
+                            </h2>
+
+                            <p class="text-[#FFFFFFA6] text-[14px] font-regular font-['Helvetica_Neue'] leading-[130%]">
+                                There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected. 
+                            </p>
+                            <div class="flex justify-start items-center gap-[7px] w-full">
+                                <a href="#"
+                                    class="site-btn w-full block login-btn max-w-[128px] bg-[#04EC8C] rounded-[18px] font-['Helvetica_Neue'] font-medium text-[16px] leading-[100%] text-[#090E18] py-[21px] text-center block">
+                                    Register
+                                </a>
+
+                                <a href="#"
+                                    class="site-btn w-full block register-btn max-w-[128px] bg-[#FFFFFF] rounded-[18px] font-['Helvetica_Neue'] font-medium text-[16px] leading-[100%] text-[#111316] py-[21px] text-center block">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-box-holder">
+                        <div class="slides-box mb-[54px]">
+                            <div class="title-box pb-[19px] mb-[28px] border-b border-[#212D40] relative">
+                                <h1
+                                    class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                    <img src="assets/images/game.svg" alt="" class="w-[29px] h-[27px]">
+                                    Trending Games
+                                </h1>
+                            </div>
+
+                            <div class="slides-box-inner flex justify-start items-center gap-[17px]">
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-1.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-2.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-3.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-4.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-5.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-6.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-7.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/game-img-8.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <div
+                                        class="slide-box-inner-content flex justify-center items-start gap-[4px] w-full py-[8px] bg-[#1B2433] rounded-[10px]">
+                                        <img src="assets/images/online-dot.svg" alt="" class="w-[13px] h-[13px]">
+                                        <h3
+                                            class="text-[#fff] text-[12px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            446
+                                            <span class="text-[#7D8392]"> Playing</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slides-box mb-[54px]">
+                            <div class="title-box pb-[19px] mb-[28px] border-b border-[#212D40] relative">
+                                <h1
+                                    class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                    <img src="assets/images/sportsic.svg" alt="" class="w-[29px] h-[27px]">
+                                    Trending Sports
+                                </h1>
+                            </div>
+
+                            <div class="slides-box-inner flex justify-start items-center gap-[17px]">
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-1.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        CRICKET
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-2.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        SOCCER
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-3.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        TENNIS
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-4.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        BASKET
+                                        BALL
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-5.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        BASEBALL
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-6.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        HORSE
+                                        RACING
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-7.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        VOLLEY
+                                        BALL
+                                    </span>
+                                </div>
+
+                                <div class="slide-box flex items-center gap-[10px] flex-col relative">
+                                    <div class="slide-box-inner-img w-[152px] h-[194px]">
+                                        <img src="assets/images/sports-img-8.png" alt="" class="w-full h-full">
+                                    </div>
+                                    <span
+                                        class="absolute top-[23px] w-full right-0 text-[#FFFFFF] text-[32px] font-bold text-center font-['Oswald'] leading-[100%]">
+                                        BASEBALL
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
