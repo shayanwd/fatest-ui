@@ -17,6 +17,7 @@
     <!-- Links -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <!-- Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +46,27 @@
             position: absolute;
             bottom: -2px;
             left: 0;
+        }
+
+        .footer-links .title-box .sh-title::after {
+            max-width: 81px;
+            bottom: 0;
+            height: 2px;
+        }
+
+        .bg-box::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/bg-linear.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
         }
     </style>
 </head>
@@ -573,10 +595,850 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="bottom-box-holder flex justify-between items-center gap-[26px] mb-[55px]">
+                        <div
+                            class="h-[287px] border-[1px] border-[#212D40] relative bg-box w-full max-w-[50%] px-[38px] py-[35px] rounded-[12px] bg-[url('assets/images/banner-2-bg.png')] bg-cover bg-center bg-no-repeat">
+                            <div
+                                class="jackpot-banner-inner w-full max-w-[454px] flex flex-col justify-start items-start gap-[19px] ">
+                                <img src="assets/images/multiple-mx-img.svg" alt="" class="w-[94px] h-[18px]">
+
+                                <h2
+                                    class="text-[#fff] text-[34px] font-medium font-['Helvetica_Neue'] leading-[120%] pb-[9px]">
+                                    Fast & Easy Crypto
+                                    Checkouts
+                                </h2>
+                                <div class="flex justify-start items-center gap-[7px] w-full">
+                                    <a href="#"
+                                        class="site-btn w-full block login-btn max-w-[138px] bg-[#04EC8C] rounded-[10px] font-['Helvetica_Neue'] font-medium text-[14px] leading-[100%] text-[#090E18] py-[15px] text-center block">
+                                        Go to Checkout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="h-[287px] overflow-hidden border-[1px] border-[#212D40] bg-[#151C28] relative bg-box w-full max-w-[50%] px-[24px] py-[30px] rounded-[12px]">
+                            <div class="jackpot-banner-inner w-full flex flex-col gap-[17px] ">
+                                <h2 class="text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[120%]">
+                                    Promotions
+                                </h2>
+
+                                <div class="h-[230px] scroll-bar w-full flex flex-col gap-[8px] overflow-hidden">
+                                    <div
+                                        class="scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/in-cricket.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    Indian Cricket
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Early Six, You Win! Read More</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="opacity-75 scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/car-race.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    Daily Races
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Play in our $100,000 Daily Race</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="opacity-60 scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/frn-open.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    French Open
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Final Set Tiebreaker Payout</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/in-cricket.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    Indian Cricket
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Early Six, You Win! Read More</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="opacity-75 scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/car-race.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    Daily Races
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Play in our $100,000 Daily Race</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="opacity-60 scroll-bar-inner p-[10px] flex justify-between items-start w-full max-w-full bg-[#1B2433] rounded-[14px] border-[1px] border-[#212D40]">
+                                        <div class="scroll-bar-inner-item flex justify-start items-center gap-[12px]">
+                                            <img src="assets/images/frn-open.png" alt="" class="w-[52px] h-[52px]">
+                                            <div class="flex flex-col justify-start items-start gap-[11px]">
+                                                <h3
+                                                    class="text-[#fff] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                    French Open
+                                                </h3>
+                                                <p
+                                                    class="text-[#7D8392] text-[13px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                    Final Set Tiebreaker Payout</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-bar-inner-item">
+                                            <span
+                                                class="px-[7px] py-[5px] bg-[#FFFFFF] rounded-[24px] text-[#111316] text-[10px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                                Promotion
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="z-10 flex justify-center items-center gap-[7px] w-full absolute bottom-[23px] left-0">
+                                    <a href="#"
+                                        class=" site-btn w-full block login-btn max-w-[138px] bg-[#04EC8C] rounded-[10px] font-['Helvetica_Neue'] font-medium text-[14px] leading-[100%] text-[#090E18] py-[15px] text-center block">
+                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs-sec">
+                        <div
+                            class="tabs-btns flex justify-start items-center gap-[6px] mb-[12px] bg-[#0C101C] rounded-[20px] p-[10px] border-[1px] border-[#131A2C]">
+                            <a href="#"
+                                class=" site-btn login-btn px-[15px] bg-[#04EC8C] rounded-[10px] font-['Helvetica_Neue'] font-medium text-[14px] leading-[100%] text-[#090E18] py-[15px] text-center block">
+                                Casino Bets
+                            </a>
+
+                            <a href="#"
+                                class=" site-btn login-btn px-[15px] bg-[#151C28] rounded-[10px] font-['Helvetica_Neue'] font-medium text-[14px] leading-[100%] text-[#fff] py-[15px] text-center block">
+                                Sports Bets
+                            </a>
+
+                            <a href="#"
+                                class=" site-btn login-btn px-[15px] bg-[#151C28] rounded-[10px] font-['Helvetica_Neue'] font-medium text-[14px] leading-[100%] text-[#fff] py-[15px] text-center block">
+                                Leaderboard
+                            </a>
+                        </div>
+
+                        <div
+                            class="table-grid flex justify-between items-center gap-[6px] mb-[12px] bg-[#04EC8C] rounded-[20px] px-[26px] py-[21px] pr-[197px]">
+                            <div class="table-grid-item-left">
+                                <div class="table-grid-item-left-inner flex justify-between gap-[42px]">
+                                    <div class="w-full max-w-[50%]">
+                                        <h3
+                                            class="text-[#090E18] text-[16px] text-left font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <span>
+                                                Game
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="w-full max-w-[50%]">
+                                        <h3
+                                            class="flex justify-start items-center gap-[4px] text-[#090E18] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <span>
+                                                User
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-grid-item-right grid grid-cols-3 max-w-max gap-[52px]">
+                                <div>
+                                    <h3
+                                        class="text-[#090E18] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            Time
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-left gap-[4px] text-[#090E18] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            Bet Amount
+                                        </span>
+                                    </h3>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="text-left gap-[4px] text-[#090E18] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            Payout
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="table-grid flex justify-between items-center gap-[6px] mb-[12px] bg-[#151C28] rounded-[20px] px-[26px] py-[21px] pr-[197px] border-[1px] border-[#212D40]">
+                            <div class="table-grid-item-left">
+                                <div class="table-grid-item-left-inner flex justify-between max-w-max gap-[42px]">
+                                    <div>
+                                        <h3
+                                            class="text-[#92A0B7] text-[16px] text-left font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <span>
+                                                Gates of Heaven Enhanced
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="flex justify-start items-center gap-[4px] text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <img src="assets/images/starzz-ic.svg" alt="" class="w-[19px] h-[19px]">
+                                            <span>
+                                                Starzzz
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-grid-item-right flex justify-between max-w-max gap-[52px]">
+                                <div>
+                                    <h3
+                                        class="text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            06:54 PM
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="flex justify-start items-center gap-[4px] text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            $30.000014
+                                        </span>
+                                        <img src="assets/images/T.svg" alt="" class="w-[16px] h-[16px]">
+                                    </h3>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="flex justify-start items-center gap-[4px] text-[#1BA27A] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            $541.00
+                                        </span>
+                                        <img src="assets/images/T.svg" alt="" class="w-[16px] h-[16px]">
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="table-grid flex justify-between items-center gap-[6px] mb-[12px] bg-[#090E18] rounded-[20px] px-[26px] py-[21px] pr-[197px] border-[1px] border-[#212D40]">
+                            <div class="table-grid-item-left">
+                                <div class="table-grid-item-left-inner flex justify-between max-w-max gap-[42px]">
+                                    <div>
+                                        <h3
+                                            class="text-[#92A0B7] text-[16px] text-left font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <span>
+                                                Gates of Heaven Enhanced
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="flex justify-start items-center gap-[4px] text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                            <img src="assets/images/starzz-ic.svg" alt="" class="w-[19px] h-[19px]">
+                                            <span>
+                                                Starzzz
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-grid-item-right flex justify-between max-w-max gap-[52px]">
+                                <div>
+                                    <h3
+                                        class="text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            06:54 PM
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="flex justify-start items-center gap-[4px] text-[#92A0B7] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            $30.000014
+                                        </span>
+                                        <img src="assets/images/T.svg" alt="" class="w-[16px] h-[16px]">
+                                    </h3>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="flex justify-start items-center gap-[4px] text-[#1BA27A] text-[16px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                                        <span>
+                                            $541.00
+                                        </span>
+                                        <img src="assets/images/T.svg" alt="" class="w-[16px] h-[16px]">
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="faqs-sec pt-[67px] pb-[95px] flex flex-col justify-center items-center gap-[59px]">
+                        <h1 class="text-[#fff] text-[48px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            Frequently
+                            Asked Question</h1>
+
+                        <div class="faqs-grid mx-auto max-w-[1164px]">
+                            <div class="faqs-grid-item grid grid-cols-2 gap-[24px]">
+                                <!-- Accordion Item 1 -->
+                                <div class="overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-1" />
+                                    <label for="accordion-1"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            What is Fate?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-2" />
+                                    <label for="accordion-2"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            What is Fate?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-3" />
+                                    <label for="accordion-3"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            Is Fate Licensed?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-4" />
+                                    <label for="accordion-4"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            Is Fate Licensed?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-5" />
+                                    <label for="accordion-5"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            Is Betting on Fate Safe?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-6" />
+                                    <label for="accordion-6"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            Is Betting on Fate Safe?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-7" />
+                                    <label for="accordion-7"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            What currencies can i Bet with?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 1 -->
+                                <div class="mt-[-4px] overflow-hidden rounded-[18px] border-[1px] border-[#212D40]">
+                                    <input type="checkbox" class="peer hidden" id="accordion-8" />
+                                    <label for="accordion-8"
+                                        class="flex justify-between items-center bg-[#151C28] pr-[24px] pl-[34px] py-[15px] cursor-pointer">
+                                        <h2
+                                            class="text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                            What currencies can i Bet with?
+                                        </h2>
+                                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="21" cy="21" r="20.5" fill="#1B2433" stroke="#263347" />
+                                            <path d="M21.5 25L16.25 19.75H26.75L21.5 25Z" fill="white" />
+                                        </svg>
+                                    </label>
+                                    <div
+                                        class="bg-[#151C28] max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-96">
+                                        <div class="pr-[24px] pl-[34px] pb-[15px]">
+                                            <p
+                                                class="text-[#fff] text-[16px] font-regular font-['Helvetica_Neue'] leading-[100%]">
+                                                Content for section 1 goes here. This can be any HTML content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <footer class="border-t-[1px] border-[#252E45] pt-[60px]">
+        <div class="ft-container w-full max-w-[1440px] mx-auto px-[15px]">
+            <div class="footer-top flex justify-between items-center pb-[53px] border-b-[1px] border-[#252E45]">
+                <h2 class="text-[#fff] text-[64px] font-regular leading-[100%] font-['Qurova_DEMO']">Fatetests</h2>
+                <div class="footer-top-inner flex items-center gap-[24px] justify-end gap-[24px]">
+                    <div class="social-links flex items-center gap-[8px]">
+                        <a href="#" class="social-link">
+                            <img src="assets/images/facebook.svg" alt="" class="w-[44px] h-[44px]">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/instagram.svg" alt="" class="w-[44px] h-[44px]">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/twitter.svg" alt="" class="w-[44px] h-[44px]">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/images/youtube.svg" alt="" class="w-[44px] h-[44px]">
+                        </a>
+                    </div>
+
+                    <form action="" class="flex items-center gap-[9px]">
+                        <select id="basic-select"
+                            class="block w-full  bg-[#151C28] cursor-pointer p-[19px] border-[1px] border-[#212D40] rounded-[16px] text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%] focus:outline-none">
+                            <option value="" disabled selected>English</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                        </select>
+
+                        <select id="basic-select"
+                            class="block w-full  bg-[#151C28] cursor-pointer p-[19px] border-[1px] border-[#212D40] rounded-[16px] text-[#fff] text-[18px] font-regular font-['Helvetica_Neue'] leading-[100%] focus:outline-none">
+                            <option value="" disabled selected>Decimal</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-links grid grid-cols-5 items-start gap-[34px] pt-[45px]">
+                <ul
+                    class="flex flex-col gap-[6px] bg-[#090E18] rounded-[20px] p-[24px] border-[1px] border-[#252E45] pt-[30px] pb-[24px] px-[24px]">
+                    <div class="title-box pb-[14px] mb-[8px] relative">
+                        <h1
+                            class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            Casino
+                        </h1>
+                    </div>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Slots</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Live Casino</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Roulette</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Blackjack</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Poker</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Providers</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Promos & Competitions</a>
+                    </li>
+                </ul>
+
+                <ul
+                    class="flex flex-col gap-[6px] bg-[#090E18] rounded-[20px] p-[24px] border-[1px] border-[#252E45] pt-[30px] pb-[24px] px-[24px]">
+                    <div class="title-box pb-[14px] mb-[8px] relative">
+                        <h1
+                            class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            Sports
+                        </h1>
+                    </div>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Slots</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Live Casino</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Roulette</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Blackjack</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Poker</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Providers</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Promos & Competitions</a>
+                    </li>
+                </ul>
+
+                <ul
+                    class="flex flex-col gap-[6px] bg-[#090E18] rounded-[20px] p-[24px] border-[1px] border-[#252E45] pt-[30px] pb-[24px] px-[24px]">
+                    <div class="title-box pb-[14px] mb-[8px] relative">
+                        <h1
+                            class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            Support
+                        </h1>
+                    </div>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Slots</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Live Casino</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Roulette</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Blackjack</a>
+                    </li>
+                </ul>
+
+                <ul
+                    class="flex flex-col gap-[6px] bg-[#090E18] rounded-[20px] p-[24px] border-[1px] border-[#252E45] pt-[30px] pb-[24px] px-[24px]">
+                    <div class="title-box pb-[14px] mb-[8px] relative">
+                        <h1
+                            class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            About us
+                        </h1>
+                    </div>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Slots</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Live Casino</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Roulette</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Blackjack</a>
+                    </li>
+                </ul>
+
+
+                <ul
+                    class="flex flex-col gap-[6px] bg-[#090E18] rounded-[20px] p-[24px] border-[1px] border-[#252E45] pt-[30px] pb-[24px] px-[24px]">
+                    <div class="title-box pb-[14px] mb-[8px] relative">
+                        <h1
+                            class="sh-title flex justify-start items-center gap-[5px] text-[#fff] text-[24px] font-medium font-['Helvetica_Neue'] leading-[100%]">
+                            Payment info
+                        </h1>
+                    </div>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Slots</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Live Casino</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Roulette</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="block text-[#92A0B7] text-[14px] font-regular font-['Helvetica_Neue'] leading-[100%] hover:text-[#fff] bg-[#151C28] border-[1px] border-[#252E45] rounded-[8px] px-[16px] py-[10px]">
+                            Blackjack</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-logo flex justify-center items-center flex-wrap gap-[16px] py-[80px] gap-[88px]">
+                <img src="assets/images/Lite coin.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Bitcoin Cash.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Eth.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Bitcoin Cash.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Dogecoin.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Doge.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Tether.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Bet Blocker.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/Responsible Gaming.png" alt="" class="w-auto h-auto">
+                <img src="assets/images/18+.png" alt="" class="w-auto h-auto">
+            </div>
+    </footer>
 </body>
 
 </html>
